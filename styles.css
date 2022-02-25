@@ -1,0 +1,227 @@
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128,128,128,0.5);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+}
+
+.scores {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.you {
+  text-align: right;
+}
+
+.computer {
+  text-align: right;
+}
+
+.roundcounter {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#result {
+  text-align: center;
+  height: 50px;
+}
+
+.roundcounterinfo {
+  display: flex;
+  justify-content: center;
+}
+
+.winlossrecord {
+  text-align: center;
+}
+
+.winrecord {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.lossrecord {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.drawrecord {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.placeholder {
+  text-align: center;
+}
+
+#pokemon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#charmander {
+  width: 30%;
+  max-width: 300px;
+}
+
+#squirtle {
+  width: 30%;
+  max-width: 300px;
+}
+
+#bulbasaur {
+  width: 30%;
+  max-width: 300px;
+}
+
+#charmander:hover {
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+#squirtle:hover {
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+#bulbasaur:hover {
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+#charmander:not(hover) {
+  transition-duration: 1s;
+  transform: scale(1.0);
+}
+
+#squirtle:not(hover) {
+  transition-duration: 1s;
+  transform: scale(1.0);
+}
+
+#bulbasaur:not(hover) {
+  transition-duration: 1s;
+  transform: scale(1.0);
+}
+
+#modalWin {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 100%;
+}
+
+#modalLose {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 100%;
+}
+
+#modalDraw {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 100%;
+}
+
+.modal-content-win {
+  background-color: #000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content-lose {
+  background-color: #000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content-draw {
+  background-color: #000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+
+#closewin {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#closelose {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#closedraw {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#closewin:hover,
+#closewin:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#closelose:hover,
+#closelose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#closedraw:hover,
+#closedraw:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+

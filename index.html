@@ -1,0 +1,75 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pokemon RPS!</title>
+      <link rel="stylesheet" href="styles.css">
+      <body>
+        <div class="headerthing">
+          <h1>Choose Your Pokémon!</h1>
+        </div>
+        <div id="pokemon">
+          <img id="Charmander" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg"></img>
+          <img id="Squirtle" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/7.svg"></img>
+          <img id="Bulbasaur" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"></img>
+        </div>
+        <div class="scores">
+          <div class="you">
+            <h2 class="yourscoreheader">You:</h3>
+            <h2 id="yourscore">0</h2>
+          </div>
+          <div class="computer">
+            <h2 class="computerscoreheader">Computer:</h3>
+            <h2 id="computerscore">0</h2>
+          </div>
+        </div>
+        <h2 id="result"></h2>
+        <div class="roundcounter">
+          <div class="roundtitle">
+            <h3 class="roundtitlecontent">Round:</h2>
+          </div>
+          <div class="roundcounterinfo">
+            <h3 id="currentround">0</h2>
+            <h3 class="of5">/5</h2>
+          </div>
+        </div>
+        <div class="winlossrecord">
+          <div class="winrecord">
+            <h3 class="winheader">Bo5 Wins:</h2>
+            <h3 id="wins">0</h2>
+          </div>
+          <div class="lossrecord">
+            <h3 class="lossheader">Bo5 Losses:</h2>
+            <h3 id="losses">0</h2>
+          </div>
+          <div class="drawrecord">
+            <h3 class="drawheader">Bo5 Draws:</h2>
+            <h3 id="draws">0</h2>
+          </div>
+        </div>
+        <div id="overlay">
+          <div id="modalwin" class="modal">
+            <div class="modal-content-win">
+              <span id="closewin">&times;</span>
+              <p>You won!<br> Would you like to play again?</p>
+              <button id="winbutton">Play Again?</button>
+            </div>
+          </div> 
+          <div id="modallose" class="modal">
+            <div class="modal-content-lose">
+              <span id="closelose">&times;</span>
+              <p>You lost!<br> Would you like to play again?</p>
+              <button id="losebutton">Play Again?</button>
+            </div>
+          </div> 
+          <div id="modaldraw" class="modal">
+            <div class="modal-content-draw">
+              <span id="closedraw">&times;</span>
+              <p>It's a draw!<br> Would you like to play again?</p>
+              <button id="drawbutton">Play Again?</button>
+            </div>
+          </div>
+        </div> 
+        <script src="script.js"></script>
+      </body>
+</html>
